@@ -56,7 +56,7 @@ export default function Store() {
     <>
       {/* Hero */}
       <Hero
-        title="Welcome to Ishop store"
+        title="Welcome to Shop Ease"
         subtitle="Discover premium products at unbeatable prices."
         image="public/pexels-karola-g-5632402.jpg"
         showButton={true}

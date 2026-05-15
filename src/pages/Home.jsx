@@ -430,7 +430,7 @@ const iceCreamProducts = [
   return (
     <>
 <Hero
-  title="Welcome to Ease shop"
+  title="Welcome to Shop Ease"
   subtitle="Up to 50% off on all products"
   image="https://images.unsplash.com/photo-1607082349566-187342175e2f"
   showButton={true}

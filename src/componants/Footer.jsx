@@ -1,74 +1,177 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import React from "react";
+
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-black mt-10">
-      
-      <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
-        
-        {/* Brand */}
-        <div>
-          <h2 className="text-xl font-bold text-white mb-3">ShopEase</h2>
-          <p className="text-sm">
-            Your one-stop shop for all your needs. Quality products, best prices, fast delivery.
-            Secure payments and 24/7 support.
-          </p>
-        </div>
+    <footer className="bg-[#f8f9fa] border-t border-gray-200 mt-16">
 
-        {/* Links */}
-        <div>
-          <h3 className="text-white font-semibold mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
-            <li><a href="#" >Home</a></li>
-            <li><a href="#" >Shop</a></li>
-            <li><a href="#" >Categories</a></li>
-            <li><a href="#" >Deals</a></li>
-          </ul>
-        </div>
+      {/* TOP SECTION */}
+      <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-        {/* Customer */}
+        {/* LOGO + DESC */}
         <div>
-          <h3 className="text-white font-semibold mb-3">Customer Service</h3>
-          <ul className="space-y-2 text-sm">
-            <li><a href="#" >Contact Us</a></li>
-            <li><a href="#" >Returns</a></li>
-            <li><a href="#" >Shipping</a></li>
-            <li><a href="#" >FAQs</a></li>
-          </ul>
-        </div>
+          <h2 className="text-3xl font-bold text-green-600">
+           Shop Ease
+          </h2>
 
-        {/* Newsletter */}
-        <div>
-          <h3 className="text-white font-semibold mb-3">Newsletter</h3>
-          <p className="text-sm mb-3">
-            Subscribe to get updates on offers and new arrivals.
+          <p className="text-gray-600 mt-4 leading-7 text-sm">
+            Your one-stop online shopping destination for groceries,
+            snacks, beauty products, and daily essentials delivered
+            quickly to your doorstep.
           </p>
 
-          <div className="flex">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full px-3 py-2 rounded-l-md text-black"
-            />
-            <button className="bg-yellow-500 px-4 rounded-r-md text-black font-semibold">
-              Subscribe
-            </button>
-          </div>
+          {/* SOCIAL ICONS */}
+          <div className="flex items-center gap-4 mt-6">
 
-          {/* Social Icons */}
-          <div className="flex gap-4 mt-4 text-lg">
-            <FaFacebookF className="cursor-pointer hover:text-white" />
-            <FaTwitter className="cursor-pointer hover:text-white" />
-            <FaInstagram className="cursor-pointer hover:text-white" />
-            <FaLinkedinIn className="cursor-pointer hover:text-white" />
+            <div className="bg-white border border-gray-200 p-3 rounded-full text-gray-700 hover:bg-green-600 hover:text-white transition duration-300 cursor-pointer shadow-sm">
+              <FaFacebookF />
+            </div>
+
+            <div className="bg-white border border-gray-200 p-3 rounded-full text-gray-700 hover:bg-green-600 hover:text-white transition duration-300 cursor-pointer shadow-sm">
+              <FaInstagram />
+            </div>
+
+            <div className="bg-white border border-gray-200 p-3 rounded-full text-gray-700 hover:bg-green-600 hover:text-white transition duration-300 cursor-pointer shadow-sm">
+              <FaTwitter />
+            </div>
+
+            <div className="bg-white border border-gray-200 p-3 rounded-full text-gray-700 hover:bg-green-600 hover:text-white transition duration-300 cursor-pointer shadow-sm">
+              <FaYoutube />
+            </div>
+
           </div>
         </div>
 
+        {/* QUICK LINKS */}
+        <div>
+          <h3 className="text-xl font-semibold mb-5 text-gray-900">
+            Quick Links
+          </h3>
+
+          <ul className="space-y-3 text-gray-600">
+
+            <li>
+              <Link
+                to="/"
+                className="hover:text-green-600 transition"
+              >
+                Home
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/about"
+                className="hover:text-green-600 transition"
+              >
+                About
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/store"
+                className="hover:text-green-600 transition"
+              >
+                Store
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/contact"
+                className="hover:text-green-600 transition"
+              >
+                Contact
+              </Link>
+            </li>
+
+          </ul>
+        </div>
+
+        {/* CATEGORIES */}
+        <div>
+          <h3 className="text-xl font-semibold mb-5 text-gray-900">
+            Categories
+          </h3>
+
+          <ul className="space-y-3 text-gray-600">
+
+            <li className="hover:text-green-600 transition cursor-pointer">
+              Fruits & Vegetables
+            </li>
+
+            <li className="hover:text-green-600 transition cursor-pointer">
+              Snacks & Drinks
+            </li>
+
+            <li className="hover:text-green-600 transition cursor-pointer">
+              Dairy Products
+            </li>
+
+            <li className="hover:text-green-600 transition cursor-pointer">
+              Beauty & Personal Care
+            </li>
+
+          </ul>
+        </div>
+
+        {/* CONTACT INFO */}
+        <div>
+          <h3 className="text-xl font-semibold mb-5 text-gray-900">
+            Contact Us
+          </h3>
+
+          <div className="space-y-4 text-gray-600 text-sm">
+
+            <p>
+              📍 Jaipur, Rajasthan, India
+            </p>
+
+            <p>
+              📞 +91 98765 43210
+            </p>
+
+            <p>
+              ✉️ support@shopease.com
+            </p>
+
+            <p>
+              🕒 24/7 Customer Support
+            </p>
+
+          </div>
+        </div>
       </div>
 
-      {/* Bottom */}
-      <div className="border-t border-gray-700 text-center text-sm py-4">
-        © {new Date().getFullYear()} ShopEase. All rights reserved.
+      {/* BOTTOM */}
+      <div className="border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
+
+          <p className="text-gray-500 text-sm text-center">
+            © 2026 Ease Shop. All Rights Reserved.
+          </p>
+
+          <div className="flex items-center gap-5 text-sm text-gray-500">
+
+            <p className="hover:text-green-600 transition cursor-pointer">
+              Privacy Policy
+            </p>
+
+            <p className="hover:text-green-600 transition cursor-pointer">
+              Terms & Conditions
+            </p>
+
+          </div>
+        </div>
       </div>
     </footer>
   );

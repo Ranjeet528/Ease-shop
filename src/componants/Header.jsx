@@ -45,7 +45,7 @@ export default function Header() {
           </button>
 
           <h1 className="text-3xl font-bold text-[#0aa40a] cursor-pointer">
-            ShopEase
+            Shop Ease
           </h1>
         </div>
 
