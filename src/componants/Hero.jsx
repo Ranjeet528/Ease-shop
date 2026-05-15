@@ -24,7 +24,7 @@ export default function Hero({
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-green-500">
           {title}
         </h1>
 
